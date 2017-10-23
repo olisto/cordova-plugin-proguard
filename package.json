@@ -1,6 +1,6 @@
 {
   "name": "@triggi/cordova-plugin-proguard",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Cordova plugin for ProGuard",
   "repository": {
     "type": "git",
