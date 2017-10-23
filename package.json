@@ -1,10 +1,10 @@
 {
-  "name": "cordova-plugin-proguard",
-  "version": "1.0.0",
+  "name": "@triggi/cordova-plugin-proguard",
+  "version": "1.0.1",
   "description": "Cordova plugin for ProGuard",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/greybax/cordova-plugin-proguard.git"
+    "url": "git+https://github.com/Triggi/cordova-plugin-proguard.git"
   },
   "keywords": [
     "proguard",
@@ -24,7 +24,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/greybax/cordova-plugin-proguard/issues"
+    "url": "https://github.com/Triggi/cordova-plugin-proguard/issues"
   },
-  "homepage": "https://github.com/greybax/cordova-plugin-proguard#readme"
+  "homepage": "https://github.com/Triggi/cordova-plugin-proguard#readme"
 }
