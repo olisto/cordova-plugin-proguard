@@ -112,16 +112,30 @@
 -dontwarn android.net.http.*
 
 #Triggi specific additions
+-keep class org.apache.cordova.** { *; }
+-keep public class * extends org.apache.cordova.CordovaPlugin
+-keep public class * extends com.phonegap.api.Plugin 
+-keep public class * extends org.apache.cordova.api.CordovaPlugin
+-keep public class * extends org.apache.cordova.api.Plugin
+
 -keep class com.intercom.** { *; }
 -keep class io.intercom.** { *; }
 -keep class com.facebook.** { *; }
 -keep class org.chromium.** { *; }
 -keep class org.xwalk.** { *; }
 -keep class org.crosswalk.** { *; }
+-keep class bolts.Task { *; }
 
+-dontnote org.chromium.**
+-dontwarn org.chromium.**
+-dontnote com.google.android.**
 -dontnote com.google.firebase.**
--dontnote android.os.**
+-dontnote com.google.firebase.iid.**
 -dontnote com.google.protobuf.**
+-dontnote android.os.**
+-dontwarn android.os.**
+-dontnote android.app.**
+-dontwarn android.app.**
 -dontnote libcore.io.Memory
 -dontnote org.robolectric.Robolectric
 -dontnote io.intercom.**
@@ -129,22 +143,13 @@
 -dontnote org.apache.**
 -dontnote sun.security.**
 -dontnote dalvik.system.**
--dontnote com.google.firebase.iid.**
 
 -dontnote com.appsflyer.FirebaseInstanceIdListener
--dontnote com.google.firebase.iid.FirebaseInstanceIdService
-
 -dontwarn com.appsflyer.FirebaseInstanceIdListener
+-dontnote com.appsflyer.MultipleInstallBroadcastReceiver
+
+-dontnote com.google.firebase.iid.FirebaseInstanceIdService
 -dontwarn com.google.firebase.iid.FirebaseInstanceIdService
 
 -dontnote com.cowbell.cordova.geofence.ActivityRecognizedService
 -dontnote com.triggi.PostCallJobService
-
--dontnote com.appsflyer.MultipleInstallBroadcastReceiver
--dontnote org.chromium.**
-
--keep class org.apache.cordova.** { *; }
--keep public class * extends org.apache.cordova.CordovaPlugin
--keep public class * extends com.phonegap.api.Plugin 
--keep public class * extends org.apache.cordova.api.CordovaPlugin
--keep public class * extends org.apache.cordova.api.Plugin
