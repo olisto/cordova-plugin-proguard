@@ -110,3 +110,41 @@
 -dontwarn android.support.v4.**
 -dontwarn android.net.SSLCertificateSocketFactory
 -dontwarn android.net.http.*
+
+#Triggi specific additions
+-keep class com.intercom.** { *; }
+-keep class io.intercom.** { *; }
+-keep class com.facebook.** { *; }
+-keep class org.chromium.** { *; }
+-keep class org.xwalk.** { *; }
+-keep class org.crosswalk.** { *; }
+
+-dontnote com.google.firebase.**
+-dontnote android.os.**
+-dontnote com.google.protobuf.**
+-dontnote libcore.io.Memory
+-dontnote org.robolectric.Robolectric
+-dontnote io.intercom.**
+-dontnote com.android.**
+-dontnote org.apache.**
+-dontnote sun.security.**
+-dontnote dalvik.system.**
+-dontnote com.google.firebase.iid.**
+
+-dontnote com.appsflyer.FirebaseInstanceIdListener
+-dontnote com.google.firebase.iid.FirebaseInstanceIdService
+
+-dontwarn com.appsflyer.FirebaseInstanceIdListener
+-dontwarn com.google.firebase.iid.FirebaseInstanceIdService
+
+-dontnote com.cowbell.cordova.geofence.ActivityRecognizedService
+-dontnote com.triggi.PostCallJobService
+
+-dontnote com.appsflyer.MultipleInstallBroadcastReceiver
+-dontnote org.chromium.**
+
+-keep class org.apache.cordova.** { *; }
+-keep public class * extends org.apache.cordova.CordovaPlugin
+-keep public class * extends com.phonegap.api.Plugin 
+-keep public class * extends org.apache.cordova.api.CordovaPlugin
+-keep public class * extends org.apache.cordova.api.Plugin
