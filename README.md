@@ -2,7 +2,7 @@
 
 [![NPM version][npm-image]][npm-url]
 
-> Cordova plugin which activates ProGuard and minification for debug and release builds in your cordova mobile application.
+> Cordova plugin which activates ProGuard and minification for debug and release builds in your cordova mobile application. Altered for the Triggi app.
 
 ## What is ProGuard?
 
