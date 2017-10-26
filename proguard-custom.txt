@@ -10,8 +10,8 @@
 #   http://developer.android.com/guide/developing/tools/proguard.html
 
 # Add any project specific keep options here:
--dontshrink
--dontoptimize
+#-dontshrink
+#-dontoptimize
 -dontobfuscate
 
 # If your project uses WebView with JS, uncomment the following
@@ -124,7 +124,7 @@
 -keep class org.chromium.** { *; }
 -keep class org.xwalk.** { *; }
 -keep class org.crosswalk.** { *; }
--keep class bolts.Task { *; }
+-keep class bolts.** { *; }
 
 -dontnote org.chromium.**
 -dontwarn org.chromium.**
