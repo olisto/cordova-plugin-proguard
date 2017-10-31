@@ -125,13 +125,13 @@
 -keep class org.xwalk.** { *; }
 -keep class org.crosswalk.** { *; }
 -keep class bolts.** { *; }
--keep class com.google.android.gms.** {*; }
 
 -dontnote org.chromium.**
 -dontwarn org.chromium.**
 -dontnote com.google.android.**
+-dontwarn com.google.android.**
 -dontnote com.google.firebase.**
--dontnote com.google.firebase.iid.**
+-dontwarn com.google.firebase.**
 -dontnote com.google.protobuf.**
 -dontnote android.os.**
 -dontwarn android.os.**
