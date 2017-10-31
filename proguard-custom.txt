@@ -126,31 +126,28 @@
 -keep class org.crosswalk.** { *; }
 -keep class bolts.** { *; }
 
--dontnote org.chromium.**
--dontwarn org.chromium.**
+-dontnote android.**
+-dontwarn android.**
+-dontnote com.android.**
+-dontwarn com.android.**
 -dontnote com.google.android.**
 -dontwarn com.google.android.**
 -dontnote com.google.firebase.**
 -dontwarn com.google.firebase.**
 -dontnote com.google.protobuf.**
--dontnote android.os.**
--dontwarn android.os.**
--dontnote android.app.**
--dontwarn android.app.**
+-dontnote org.chromium.**
+-dontwarn org.chromium.**
 -dontnote libcore.io.Memory
 -dontnote org.robolectric.Robolectric
 -dontnote io.intercom.**
--dontnote com.android.**
 -dontnote org.apache.**
 -dontnote sun.security.**
 -dontnote dalvik.system.**
 
+-dontwarn com.appsflyer.GcmInstanceIdListener
 -dontnote com.appsflyer.FirebaseInstanceIdListener
 -dontwarn com.appsflyer.FirebaseInstanceIdListener
 -dontnote com.appsflyer.MultipleInstallBroadcastReceiver
-
--dontnote com.google.firebase.iid.FirebaseInstanceIdService
--dontwarn com.google.firebase.iid.FirebaseInstanceIdService
 
 -dontnote com.cowbell.cordova.geofence.ActivityRecognizedService
 -dontnote com.triggi.PostCallJobService
