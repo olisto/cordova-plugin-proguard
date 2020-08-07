@@ -118,6 +118,8 @@
 -keep public class * extends org.apache.cordova.api.CordovaPlugin
 -keep public class * extends org.apache.cordova.api.Plugin
 
+-keep class com.olisto.cordova.geofence.GeofenceNotificationFactory { *; }
+
 -keep class com.intercom.** { *; }
 -keep class io.intercom.** { *; }
 -keep class com.facebook.** { *; }
