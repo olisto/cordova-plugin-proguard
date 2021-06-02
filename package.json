@@ -27,7 +27,7 @@
   "bugs": {
     "url": "https://github.com/Triggi/cordova-plugin-proguard/issues"
   },
-  "homepage": "https://github.com/Triggi/cordova-plugin-proguard#readme"
+  "homepage": "https://github.com/Triggi/cordova-plugin-proguard#readme",
   "devDependencies": {
     "jshint": "2.12.0"
   }
