@@ -1,6 +1,7 @@
 {
+
   "name": "@triggi/cordova-plugin-proguard",
-  "version": "1.0.9",
+  "version": "2.2.0",
   "description": "Cordova plugin for ProGuard",
   "repository": {
     "type": "git",
@@ -27,4 +28,7 @@
     "url": "https://github.com/Triggi/cordova-plugin-proguard/issues"
   },
   "homepage": "https://github.com/Triggi/cordova-plugin-proguard#readme"
+  "devDependencies": {
+    "jshint": "2.12.0"
+  }
 }

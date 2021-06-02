@@ -1,6 +1,9 @@
 # cordova-plugin-proguard
 
 [![NPM version][npm-image]][npm-url]
+[![npm](https://img.shields.io/npm/dm/cordova-plugin-proguard.svg)](https://www.npmjs.com/package/cordova-plugin-proguard)
+
+[![Patreon](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/bePatron?u=14980891)
 
 > Cordova plugin which activates ProGuard and minification for debug and release builds in your cordova mobile application. Altered for the Triggi app.
 
@@ -20,6 +23,23 @@ You can read more about it on [ProGuard official website](https://www.guardsquar
 `proguard-custom.txt` file contains some basic rules for your cordova mobile app. Feel free to [fork this repo](https://github.com/greybax/cordova-plugin-proguard/fork) and modify it as you want. 
 
 You can also to check out some [Android ProGuard snippets](https://github.com/krschultz/android-proguard-snippets)
+
+If you want to add rules to this `proguard-custom.txt`, please create your own `proguard-custom.txt` and add this to your projectroot folder. 
+Upon installing the proguard-plugin, the rules will be added to your project.
+Example rules for various situations will be in the commented section in the plugin `proguard-custom.txt`.
+
+```
+ionic cordova platform rm android
+ionic cordova platform add android
+```
+
+## History
+ - v1.0.0 - supports Cordova version <7
+ - v2.0.0 - supports Cordova version 7+ (thanks to @SujitSingh)
+
+## Why I've done this plugin?
+
+https://alfilatov.com/posts/how-to-setup-proguard-in-cordova-application/
 
 ## License
 
